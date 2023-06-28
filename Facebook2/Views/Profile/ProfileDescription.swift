@@ -18,7 +18,7 @@ struct ProfileDescription: View {
 				Image(systemName: "heart.fill")
 					.foregroundColor(.red)
 				
-				NavigationLink(destination: ProfileView(isYourProfile: false, posts: 19, followers: 526, following: 1004, profileName: "Julia", profileCodeName: "julia.flolivv")) {
+				NavigationLink(destination: ProfileView(user: Julia, isYourProfile: false)) {
 					Text("@julia.flolivv")
 						.foregroundColor(.cyan)
 				}

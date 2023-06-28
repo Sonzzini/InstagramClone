@@ -27,10 +27,12 @@ struct StoriesView: View {
 			.toolbar {
 				
 				ToolbarItem(placement: .navigationBarLeading) {
-					Image(profileImage)
-						.resizable()
-						.frame(width: 40, height: 40)
-						.clipShape(Circle())
+					NavigationLink(destination: ProfileView(user: Mark, isYourProfile: false)) {
+						Image(profileImage)
+							.resizable()
+							.frame(width: 40, height: 40)
+							.clipShape(Circle())
+					}
 				}
 				
 				ToolbarItemGroup(placement: .navigationBarTrailing) {

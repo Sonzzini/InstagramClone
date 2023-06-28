@@ -24,6 +24,7 @@
 		E9430F6B2A4BE943002E668C /* OptionsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F6A2A4BE943002E668C /* OptionsSheetView.swift */; };
 		E9430F6F2A4BEDF8002E668C /* SheetViewListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F6E2A4BEDF8002E668C /* SheetViewListItem.swift */; };
 		E9430F712A4CAEC5002E668C /* ProfileDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F702A4CAEC5002E668C /* ProfileDescription.swift */; };
+		E9430F732A4CD15E002E668C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F722A4CD15E002E668C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E9430F6A2A4BE943002E668C /* OptionsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSheetView.swift; sourceTree = "<group>"; };
 		E9430F6E2A4BEDF8002E668C /* SheetViewListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewListItem.swift; sourceTree = "<group>"; };
 		E9430F702A4CAEC5002E668C /* ProfileDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDescription.swift; sourceTree = "<group>"; };
+		E9430F722A4CD15E002E668C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E9430F432A4BB4D4002E668C /* Facebook2App.swift */,
+				E9430F722A4CD15E002E668C /* User.swift */,
 				E9430F5E2A4BC0BB002E668C /* Views */,
 				E9430F5D2A4BC0AB002E668C /* Components */,
 				E9430F472A4BB4D6002E668C /* Assets.xcassets */,
@@ -230,6 +233,7 @@
 				E9430F522A4BB8FF002E668C /* NotificationsView.swift in Sources */,
 				E9430F6B2A4BE943002E668C /* OptionsSheetView.swift in Sources */,
 				E9430F672A4BE0C7002E668C /* ProfileView.swift in Sources */,
+				E9430F732A4CD15E002E668C /* User.swift in Sources */,
 				E9430F652A4BDE15002E668C /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,7 +26,7 @@ struct HomeView: View {
 						}
 					}
 
-					// CONTEN
+					// CONTENT
 					
 				}
 				

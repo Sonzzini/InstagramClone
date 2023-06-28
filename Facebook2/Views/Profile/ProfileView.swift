@@ -10,15 +10,10 @@ import SwiftUI
 
 struct ProfileView: View {
 	
+	let user: User
+	
 	let isYourProfile: Bool
 	let profileDescription: ProfileDescription = ProfileDescription()
-	
-	var posts: Int
-	var followers: Int
-	var following: Int
-	
-	var profileName: String
-	var profileCodeName: String
 	
 	@State var createSheet: Bool = false
 	@State var optionsSheet: Bool = false
@@ -30,26 +25,26 @@ struct ProfileView: View {
 					HStack(spacing: 30) {
 						YourStoriesCard(showsName: false, showsHasStoryName: false)
 						VStack {
-							Text("\(posts)")
+							Text("\(user.posts)")
 								.bold()
 							Text("Posts")
 								.font(.system(size: 15))
 						}
 						VStack {
-							Text("\(followers)")
+							Text("\(user.followers)")
 								.bold()
 							Text("Followers")
 								.font(.system(size: 15))
 						}
 						VStack {
-							Text("\(following)")
+							Text("\(user.following)")
 								.bold()
 							Text("Following")
 								.font(.system(size: 15))
 						}
 					}
 					
-					Text("\(profileName)")
+					Text("\(user.profileName)")
 						.font(.system(size: 15, weight: .bold, design: .rounded))
 					
 					profileDescription
@@ -58,12 +53,12 @@ struct ProfileView: View {
 					
 					if isYourProfile {
 						ToolbarItem(placement: .navigationBarLeading) {
-							Text("\(profileCodeName)")
+							Text("\(user.profileCodeName)")
 								.font(.system(size: 25, weight: .bold))
 						}
 					} else {
 						ToolbarItem(placement: .principal) {
-							Text("\(profileCodeName)")
+							Text("\(user.profileCodeName)")
 								.font(.system(size: 15, weight: .bold))
 						}
 					}
@@ -113,6 +108,6 @@ struct ProfileView: View {
 
 struct ProfileView_Preview: PreviewProvider {
 	static var previews: some View {
-		ProfileView(isYourProfile: true, posts: 40, followers: 223, following: 310, profileName: "Paulo Sonzzini", profileCodeName: "sonzii_polo")
+		ProfileView(user: Mark, isYourProfile: false)
 	}
 }

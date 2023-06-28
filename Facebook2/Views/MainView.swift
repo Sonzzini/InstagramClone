@@ -21,7 +21,7 @@ struct MainView: View {
 					Image(systemName: "plus.app")
 				}
 			
-			ProfileView(isYourProfile: true, posts: 40, followers: 223, following: 310, profileName: "Paulo Sonzzini", profileCodeName: "sonzii_polo")
+			ProfileView(user: YourProfile, isYourProfile: true)
 				.tabItem {
 					Image(systemName: "person.circle.fill")
 				}
