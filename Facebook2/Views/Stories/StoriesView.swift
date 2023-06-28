@@ -21,6 +21,7 @@ struct StoriesView: View {
 			VStack {
 				
 				Image(systemName: "heart")
+				// comentário
 				
 			}
 			.toolbar {
