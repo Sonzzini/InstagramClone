@@ -15,7 +15,7 @@ struct HomeView: View {
 		NavigationStack {
 			ScrollView {
 				VStack {
-					
+					// This was changed
 					ScrollView(.horizontal, showsIndicators: false) {
 						HStack {
 							YourStoriesCard(showsName: true)
