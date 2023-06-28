@@ -20,7 +20,7 @@ struct StoriesView: View {
 		NavigationStack {
 			VStack {
 				
-				Image(systemName: "heart")
+				Image(systemName: "xmark")
 				// comentário
 				
 			}
