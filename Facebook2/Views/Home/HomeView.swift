@@ -26,6 +26,7 @@ struct HomeView: View {
 						}
 					}
 
+					Text("Laura")
 					// CONTENT
 					
 				}
