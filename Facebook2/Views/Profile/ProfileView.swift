@@ -13,17 +13,22 @@ struct ProfileView: View {
 	let user: User
 	
 	let isYourProfile: Bool
-	let profileDescription: ProfileDescription = ProfileDescription()
 	
 	@State var createSheet: Bool = false
 	@State var optionsSheet: Bool = false
+	@State var showDiscoverPeople: Bool = false
 	
 	var body: some View {
 		NavigationStack {
 			ScrollView {
 				VStack(alignment: .leading) {
 					HStack(spacing: 30) {
-						YourStoriesCard(showsName: false, showsHasStoryName: false)
+						
+						if user.profileCodeName == "sonzii_polo" {
+							YourStoriesCard(showsName: false, showsHasStoryName: false)
+						} else {
+							StoriesCard(user: user, showsName: false)
+						}
 						VStack {
 							Text("\(user.posts)")
 								.bold()
@@ -47,7 +52,24 @@ struct ProfileView: View {
 					Text("\(user.profileName)")
 						.font(.system(size: 15, weight: .bold, design: .rounded))
 					
-					profileDescription
+					user.description
+					
+					if isYourProfile {
+						HStack(spacing: 5) {
+							EditProfileButton(user: user)
+							ShareProfileButton(user: user)
+							DiscoverPeopleButton(isOn: $showDiscoverPeople)
+						}
+					}
+					
+					if showDiscoverPeople {
+						Text("Discover people")
+							.font(.system(size: 15, weight: .bold, design: .rounded))
+					}
+					
+					// discover people -> IF DISCOVER PEOPLE -> SHOW CARDS
+					
+					// MARK: End of Profile Content
 				}
 				.toolbar {
 					

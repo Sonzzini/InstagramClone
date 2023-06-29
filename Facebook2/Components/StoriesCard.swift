@@ -12,10 +12,10 @@ struct StoriesCard: View {
 	
 	@State var presentStory: Bool = false
 	
-	let imageName: String
-	let profileName: String
+	let user: User
 	
 	var showsName: Bool = true
+	var hasBorder: Bool = true
 	
 	var body: some View {
 		VStack {
@@ -23,24 +23,35 @@ struct StoriesCard: View {
 			Button {
 				presentStory.toggle()
 			} label: {
-				Image(imageName)
-					.resizable()
-					.aspectRatio(contentMode: .fill)
-					.frame(width: 70, height: 70)
-					.clipShape(Circle())
-					.padding(4)
-					.overlay(Circle().stroke(LinearGradient(colors: [Color("InstagramPurple"), Color("InstagramPurple"), Color("InstagramPink"), Color("InstagramOrange"), Color("InstagramYellow")], startPoint: .topTrailing, endPoint: .bottomLeading), lineWidth: 2.5))
-					.padding(4)
+				if hasBorder {
+					Image(user.imageName)
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.frame(width: 70, height: 70)
+						.clipShape(Circle())
+						.padding(4)
+						.overlay(Circle().stroke(LinearGradient(colors: [Color("InstagramPurple"), Color("InstagramPurple"), Color("InstagramPink"), Color("InstagramOrange"), Color("InstagramYellow")], startPoint: .topTrailing, endPoint: .bottomLeading), lineWidth: 2.5))
+						.padding(4)
+				}
+				else {
+					Image(user.imageName)
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.frame(width: 70, height: 70)
+						.clipShape(Circle())
+						.padding(4)
+						.padding(4)
+				}
 			}
 			if showsName {
-				Text(profileName)
+				Text(user.profileName)
 					.padding([.top], -8)
 					.font(.system(size: 12))
 					.foregroundColor(.white)
 			}
 		}
 		.fullScreenCover(isPresented: $presentStory) {
-			StoriesView(profileImage: imageName)
+			StoriesView(user: user, profileImage: user.imageName)
 				.presentationDetents([.large])
 		}
 	}

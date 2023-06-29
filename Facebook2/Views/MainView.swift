@@ -16,9 +16,19 @@ struct MainView: View {
 					Image(systemName: "house")
 				}
 			
+			ExploreView()
+				.tabItem {
+					Image(systemName: "magnifyingglass")
+				}
+			
 			NewPostView()
 				.tabItem {
 					Image(systemName: "plus.app")
+				}
+			
+			ReelsView()
+				.tabItem {
+					Image(systemName: "play.square.stack")
 				}
 			
 			ProfileView(user: YourProfile, isYourProfile: true)

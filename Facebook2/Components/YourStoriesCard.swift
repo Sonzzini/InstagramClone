@@ -32,10 +32,10 @@ struct YourStoriesCard: View {
 			} label: {
 				if hasStory {
 					if showsHasStoryName {
-						StoriesCard(imageName: imageName, profileName: "Paulo")
+						StoriesCard(user: YourProfile)
 					}
 					else {
-						StoriesCard(imageName: imageName, profileName: "Paulo", showsName: false)
+						StoriesCard(user: YourProfile, showsName: false)
 					}
 				}
 				else {

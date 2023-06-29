@@ -14,6 +14,7 @@ struct StoriesView: View {
 	
 	@State var reportSheetOn: Bool = false
 	
+	let user: User
 	let profileImage: String
 	
 	var body: some View {
@@ -27,7 +28,7 @@ struct StoriesView: View {
 			.toolbar {
 				
 				ToolbarItem(placement: .navigationBarLeading) {
-					NavigationLink(destination: ProfileView(user: Mark, isYourProfile: false)) {
+					NavigationLink(destination: ProfileView(user: user, isYourProfile: false)) {
 						Image(profileImage)
 							.resizable()
 							.frame(width: 40, height: 40)

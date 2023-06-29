@@ -10,26 +10,37 @@ import SwiftUI
 
 struct ProfileDescription: View {
 	
-	
+	var myprofile: Bool = false
+	var text: String = ""
 	
 	var body: some View {
 		VStack(alignment: .leading) {
-			HStack {
-				Image(systemName: "heart.fill")
-					.foregroundColor(.red)
+			
+			if myprofile {
 				
-				NavigationLink(destination: ProfileView(user: Julia, isYourProfile: false)) {
-					Text("@julia.flolivv")
-						.foregroundColor(.cyan)
-				}
+				HStack {
+					Image(systemName: "heart.fill")
+						.foregroundColor(.red)
+					
+					NavigationLink(destination: ProfileView(user: Julia, isYourProfile: false)) {
+						Text("@julia.flolivv")
+							.foregroundColor(.cyan)
+					}
 					.foregroundColor(.cyan)
+					
+					Image(systemName: "heart.fill")
+						.foregroundColor(.red)
+				}
 				
-				Image(systemName: "heart.fill")
-					.foregroundColor(.red)
+				Text("Apoc 3,20:")
+				Text("Eis que estou à porta e bato. Se alguém ouvir a minha voz e abrir a porta, entrarei e cearei com ele, e ele comigo.")
+				
 			}
 			
-			Text("Apoc 3,20:")
-			Text("Eis que estou à porta e bato. Se alguém ouvir a minha voz e abrir a porta, entrarei e cearei com ele, e ele comigo.")
+			else {
+				Text("\(text)")
+			}
+			
 		}.font(.system(size: 15))
 	}
 }

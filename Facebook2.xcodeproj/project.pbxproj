@@ -25,6 +25,12 @@
 		E9430F6F2A4BEDF8002E668C /* SheetViewListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F6E2A4BEDF8002E668C /* SheetViewListItem.swift */; };
 		E9430F712A4CAEC5002E668C /* ProfileDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F702A4CAEC5002E668C /* ProfileDescription.swift */; };
 		E9430F732A4CD15E002E668C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F722A4CD15E002E668C /* User.swift */; };
+		E9430F752A4D01DD002E668C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F742A4D01DD002E668C /* ExploreView.swift */; };
+		E9430F772A4D02AC002E668C /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F762A4D02AC002E668C /* ReelsView.swift */; };
+		E9430F792A4D0A4F002E668C /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F782A4D0A4F002E668C /* EditProfileView.swift */; };
+		E9430F7B2A4D0C19002E668C /* EditProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F7A2A4D0C19002E668C /* EditProfileButton.swift */; };
+		E9430F7E2A4D0CE4002E668C /* ShareProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F7D2A4D0CE4002E668C /* ShareProfileButton.swift */; };
+		E9430F802A4D0DAA002E668C /* DiscoverPeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F7F2A4D0DAA002E668C /* DiscoverPeopleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +53,12 @@
 		E9430F6E2A4BEDF8002E668C /* SheetViewListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewListItem.swift; sourceTree = "<group>"; };
 		E9430F702A4CAEC5002E668C /* ProfileDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDescription.swift; sourceTree = "<group>"; };
 		E9430F722A4CD15E002E668C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E9430F742A4D01DD002E668C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		E9430F762A4D02AC002E668C /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		E9430F782A4D0A4F002E668C /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E9430F7A2A4D0C19002E668C /* EditProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileButton.swift; sourceTree = "<group>"; };
+		E9430F7D2A4D0CE4002E668C /* ShareProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareProfileButton.swift; sourceTree = "<group>"; };
+		E9430F7F2A4D0DAA002E668C /* DiscoverPeopleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,8 @@
 				E9430F602A4BCDD2002E668C /* YourStoriesCard.swift */,
 				E9430F552A4BBABC002E668C /* StoriesCard.swift */,
 				E9430F6E2A4BEDF8002E668C /* SheetViewListItem.swift */,
+				E9430F7F2A4D0DAA002E668C /* DiscoverPeopleButton.swift */,
+				E9430F7C2A4D0CC2002E668C /* Sheets&FullScreenCovers */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -111,7 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				E9430F622A4BDB2E002E668C /* MainView.swift */,
+				E9430F762A4D02AC002E668C /* ReelsView.swift */,
 				E9430F642A4BDE15002E668C /* NewPostView.swift */,
+				E9430F742A4D01DD002E668C /* ExploreView.swift */,
 				E9430F6D2A4BECEF002E668C /* Home */,
 				E9430F6C2A4BECD7002E668C /* Profile */,
 				E9430F5F2A4BC3A7002E668C /* Stories */,
@@ -132,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E9430F662A4BE0C7002E668C /* ProfileView.swift */,
+				E9430F782A4D0A4F002E668C /* EditProfileView.swift */,
 				E9430F702A4CAEC5002E668C /* ProfileDescription.swift */,
 				E9430F682A4BE827002E668C /* NewPostSheetView.swift */,
 				E9430F6A2A4BE943002E668C /* OptionsSheetView.swift */,
@@ -147,6 +164,15 @@
 				E9430F532A4BB9C0002E668C /* MessagesView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E9430F7C2A4D0CC2002E668C /* Sheets&FullScreenCovers */ = {
+			isa = PBXGroup;
+			children = (
+				E9430F7A2A4D0C19002E668C /* EditProfileButton.swift */,
+				E9430F7D2A4D0CE4002E668C /* ShareProfileButton.swift */,
+			);
+			path = "Sheets&FullScreenCovers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,16 +250,22 @@
 				E9430F542A4BB9C0002E668C /* MessagesView.swift in Sources */,
 				E9430F612A4BCDD2002E668C /* YourStoriesCard.swift in Sources */,
 				E9430F712A4CAEC5002E668C /* ProfileDescription.swift in Sources */,
+				E9430F802A4D0DAA002E668C /* DiscoverPeopleButton.swift in Sources */,
+				E9430F7B2A4D0C19002E668C /* EditProfileButton.swift in Sources */,
 				E9430F462A4BB4D4002E668C /* HomeView.swift in Sources */,
+				E9430F7E2A4D0CE4002E668C /* ShareProfileButton.swift in Sources */,
 				E9430F692A4BE827002E668C /* NewPostSheetView.swift in Sources */,
 				E9430F6F2A4BEDF8002E668C /* SheetViewListItem.swift in Sources */,
 				E9430F5A2A4BBEB9002E668C /* StoriesView.swift in Sources */,
 				E9430F442A4BB4D4002E668C /* Facebook2App.swift in Sources */,
 				E9430F562A4BBABC002E668C /* StoriesCard.swift in Sources */,
 				E9430F522A4BB8FF002E668C /* NotificationsView.swift in Sources */,
+				E9430F752A4D01DD002E668C /* ExploreView.swift in Sources */,
+				E9430F792A4D0A4F002E668C /* EditProfileView.swift in Sources */,
 				E9430F6B2A4BE943002E668C /* OptionsSheetView.swift in Sources */,
 				E9430F672A4BE0C7002E668C /* ProfileView.swift in Sources */,
 				E9430F732A4CD15E002E668C /* User.swift in Sources */,
+				E9430F772A4D02AC002E668C /* ReelsView.swift in Sources */,
 				E9430F652A4BDE15002E668C /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

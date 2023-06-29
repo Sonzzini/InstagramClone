@@ -19,10 +19,10 @@ struct HomeView: View {
 					ScrollView(.horizontal, showsIndicators: false) {
 						HStack {
 							YourStoriesCard(showsName: true)
-							StoriesCard(imageName: "profPic1", profileName: "Mark")
-							StoriesCard(imageName: "profPic2", profileName: "John")
-							StoriesCard(imageName: "profPic3", profileName: "Susan")
-							StoriesCard(imageName: "profPic4", profileName: "Derek")
+							StoriesCard(user: Mark)
+							StoriesCard(user: John)
+							StoriesCard(user: Susan)
+							StoriesCard(user: Derek)
 						}
 					}
 
