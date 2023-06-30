@@ -17,6 +17,8 @@ struct StoriesCard: View {
 	var showsName: Bool = true
 	var hasBorder: Bool = true
 	
+	var isPost: Bool = false
+	
 	var body: some View {
 		VStack {
 			
@@ -27,7 +29,7 @@ struct StoriesCard: View {
 					Image(user.imageName)
 						.resizable()
 						.aspectRatio(contentMode: .fill)
-						.frame(width: 70, height: 70)
+						.frame(width: isPost ? 30 : 70, height: isPost ? 30 : 70)
 						.clipShape(Circle())
 						.padding(4)
 						.overlay(Circle().stroke(LinearGradient(colors: [Color("InstagramPurple"), Color("InstagramPurple"), Color("InstagramPink"), Color("InstagramOrange"), Color("InstagramYellow")], startPoint: .topTrailing, endPoint: .bottomLeading), lineWidth: 2.5))
@@ -37,7 +39,7 @@ struct StoriesCard: View {
 					Image(user.imageName)
 						.resizable()
 						.aspectRatio(contentMode: .fill)
-						.frame(width: 70, height: 70)
+						.frame(width: isPost ? 30 : 70, height: isPost ? 30 : 70)
 						.clipShape(Circle())
 						.padding(4)
 						.padding(4)

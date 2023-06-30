@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E908E7922A4E2081007AEFB4 /* PostLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908E7912A4E2081007AEFB4 /* PostLikeButton.swift */; };
+		E908E7952A4E8A1B007AEFB4 /* PostCommentsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908E7942A4E8A1B007AEFB4 /* PostCommentsButton.swift */; };
+		E908E7972A4E8AF1007AEFB4 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908E7962A4E8AF1007AEFB4 /* CommentsView.swift */; };
+		E908E7992A4E8D49007AEFB4 /* PostBookmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908E7982A4E8D49007AEFB4 /* PostBookmarkButton.swift */; };
+		E908E79B2A4E9058007AEFB4 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908E79A2A4E9058007AEFB4 /* BookmarkView.swift */; };
 		E9430F442A4BB4D4002E668C /* Facebook2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F432A4BB4D4002E668C /* Facebook2App.swift */; };
 		E9430F462A4BB4D4002E668C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F452A4BB4D4002E668C /* HomeView.swift */; };
 		E9430F482A4BB4D6002E668C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9430F472A4BB4D6002E668C /* Assets.xcassets */; };
@@ -31,9 +36,15 @@
 		E9430F7B2A4D0C19002E668C /* EditProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F7A2A4D0C19002E668C /* EditProfileButton.swift */; };
 		E9430F7E2A4D0CE4002E668C /* ShareProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F7D2A4D0CE4002E668C /* ShareProfileButton.swift */; };
 		E9430F802A4D0DAA002E668C /* DiscoverPeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430F7F2A4D0DAA002E668C /* DiscoverPeopleButton.swift */; };
+		E9ECE5EE2A4E0D3000148511 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECE5ED2A4E0D3000148511 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E908E7912A4E2081007AEFB4 /* PostLikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikeButton.swift; sourceTree = "<group>"; };
+		E908E7942A4E8A1B007AEFB4 /* PostCommentsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsButton.swift; sourceTree = "<group>"; };
+		E908E7962A4E8AF1007AEFB4 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		E908E7982A4E8D49007AEFB4 /* PostBookmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBookmarkButton.swift; sourceTree = "<group>"; };
+		E908E79A2A4E9058007AEFB4 /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
 		E9430F402A4BB4D4002E668C /* Facebook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9430F432A4BB4D4002E668C /* Facebook2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook2App.swift; sourceTree = "<group>"; };
 		E9430F452A4BB4D4002E668C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -59,6 +70,7 @@
 		E9430F7A2A4D0C19002E668C /* EditProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileButton.swift; sourceTree = "<group>"; };
 		E9430F7D2A4D0CE4002E668C /* ShareProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareProfileButton.swift; sourceTree = "<group>"; };
 		E9430F7F2A4D0DAA002E668C /* DiscoverPeopleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleButton.swift; sourceTree = "<group>"; };
+		E9ECE5ED2A4E0D3000148511 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E908E7932A4E2085007AEFB4 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E9ECE5ED2A4E0D3000148511 /* Post.swift */,
+				E908E7962A4E8AF1007AEFB4 /* CommentsView.swift */,
+				E908E7912A4E2081007AEFB4 /* PostLikeButton.swift */,
+				E908E7942A4E8A1B007AEFB4 /* PostCommentsButton.swift */,
+				E908E7982A4E8D49007AEFB4 /* PostBookmarkButton.swift */,
+				E908E79A2A4E9058007AEFB4 /* BookmarkView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		E9430F372A4BB4D4002E668C = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +156,7 @@
 				E9430F6D2A4BECEF002E668C /* Home */,
 				E9430F6C2A4BECD7002E668C /* Profile */,
 				E9430F5F2A4BC3A7002E668C /* Stories */,
+				E908E7932A4E2085007AEFB4 /* Post */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,23 +271,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E908E7952A4E8A1B007AEFB4 /* PostCommentsButton.swift in Sources */,
 				E9430F5C2A4BC079002E668C /* ReportSheetView.swift in Sources */,
 				E9430F632A4BDB2E002E668C /* MainView.swift in Sources */,
 				E9430F542A4BB9C0002E668C /* MessagesView.swift in Sources */,
 				E9430F612A4BCDD2002E668C /* YourStoriesCard.swift in Sources */,
 				E9430F712A4CAEC5002E668C /* ProfileDescription.swift in Sources */,
 				E9430F802A4D0DAA002E668C /* DiscoverPeopleButton.swift in Sources */,
+				E908E7922A4E2081007AEFB4 /* PostLikeButton.swift in Sources */,
 				E9430F7B2A4D0C19002E668C /* EditProfileButton.swift in Sources */,
 				E9430F462A4BB4D4002E668C /* HomeView.swift in Sources */,
+				E908E7972A4E8AF1007AEFB4 /* CommentsView.swift in Sources */,
 				E9430F7E2A4D0CE4002E668C /* ShareProfileButton.swift in Sources */,
+				E908E7992A4E8D49007AEFB4 /* PostBookmarkButton.swift in Sources */,
 				E9430F692A4BE827002E668C /* NewPostSheetView.swift in Sources */,
 				E9430F6F2A4BEDF8002E668C /* SheetViewListItem.swift in Sources */,
 				E9430F5A2A4BBEB9002E668C /* StoriesView.swift in Sources */,
+				E9ECE5EE2A4E0D3000148511 /* Post.swift in Sources */,
 				E9430F442A4BB4D4002E668C /* Facebook2App.swift in Sources */,
 				E9430F562A4BBABC002E668C /* StoriesCard.swift in Sources */,
 				E9430F522A4BB8FF002E668C /* NotificationsView.swift in Sources */,
 				E9430F752A4D01DD002E668C /* ExploreView.swift in Sources */,
 				E9430F792A4D0A4F002E668C /* EditProfileView.swift in Sources */,
+				E908E79B2A4E9058007AEFB4 /* BookmarkView.swift in Sources */,
 				E9430F6B2A4BE943002E668C /* OptionsSheetView.swift in Sources */,
 				E9430F672A4BE0C7002E668C /* ProfileView.swift in Sources */,
 				E9430F732A4CD15E002E668C /* User.swift in Sources */,

@@ -26,6 +26,8 @@ struct HomeView: View {
 						}
 					}
 
+					Post(imageName: "Post1", user: Mark)
+					Post(imageName: "Post1", user: YourProfile)
 					// CONTENT
 					
 				}

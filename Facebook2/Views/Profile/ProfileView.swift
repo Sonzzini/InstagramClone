@@ -12,7 +12,7 @@ struct ProfileView: View {
 	
 	let user: User
 	
-	let isYourProfile: Bool
+	var isYourProfile: Bool = false
 	
 	@State var createSheet: Bool = false
 	@State var optionsSheet: Bool = false
@@ -22,7 +22,7 @@ struct ProfileView: View {
 		NavigationStack {
 			ScrollView {
 				VStack(alignment: .leading) {
-					HStack(spacing: 30) {
+					HStack(spacing: 40) {
 						
 						if user.profileCodeName == "sonzii_polo" {
 							YourStoriesCard(showsName: false, showsHasStoryName: false)
